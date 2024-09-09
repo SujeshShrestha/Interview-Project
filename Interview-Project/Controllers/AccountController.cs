@@ -70,6 +70,7 @@ namespace Interview_Project.Controllers
                 return BadRequest();
             }
             //var userDtoo = await CheckIfUserExistsWithGoogleInfo(result);
+
             var user = await FindOrCreateUserFromGoogleInfo(result);
 
             // If user creation or retrieval fails, handle accordingly
